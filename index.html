@@ -2,85 +2,802 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Dharmveer Rana AC Service - Gwalior में AC Home Service, AC Repair, AC Installation, AC Cleaning, Gas Filling और Maintenance.">
-<meta name="keywords" content="AC Home Service Gwalior, AC Repair Gwalior, AC Service Gwalior, AC Installation, AC Cleaning, AC Gas Filling, AC Technician">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dharmveer Rana AC Service | Gwalior</title>
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-font-family:Arial,Helvetica,sans-serif;
-color:#102a50;
-background:#fff;
-line-height:1.5
-}
-a{text-decoration:none;color:inherit}
-.wrap{max-width:1280px;margin:auto;padding:0 22px}
+<meta name="description" content="Dharmveer Rana AC Service Gwalior - Professional AC Repair, AC Service, Installation, Gas Filling and Maintenance at your Home. Call 8959133616.">
+<meta name="keywords" content="AC service Gwalior, AC repair Gwalior, AC gas filling Gwalior, AC installation Gwalior, AC maintenance Gwalior, Dharmveer Rana AC Service">
+<meta name="author" content="Dharmveer Rana AC Service">
 
-.top{
-height:72px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:18px;
-background:#fff
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f8fc;
+  color:#102a43;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:linear-gradient(135deg,#0759a5,#0787d1);
+  color:white;
+  box-shadow:0 3px 15px rgba(0,0,0,.15);
+}
+
+.header-top{
+  max-width:1100px;
+  margin:auto;
+  padding:15px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:#bdefff;
+}
+
+.call-top{
+  background:white;
+  color:#0759a5;
+  padding:9px 15px;
+  border-radius:30px;
+  font-weight:bold;
+}
+
+nav{
+  background:rgba(0,0,0,.12);
+  padding:10px 5%;
+  text-align:center;
+  overflow-x:auto;
+  white-space:nowrap;
+}
+
+nav a{
+  color:white;
+  margin:0 9px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.hero{
+  background:linear-gradient(135deg,#eaf8ff,#ffffff);
+  padding:65px 7% 55px;
+  text-align:center;
+}
+
+.badge{
+  display:inline-block;
+  background:#dff5ff;
+  color:#0571b9;
+  padding:8px 16px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  color:#0759a5;
+  font-size:clamp(32px,8vw,58px);
+  line-height:1.15;
+  margin-bottom:10px;
+}
+
+.hero h1 span{
+  color:#00a1e8;
+}
+
+.hero h2{
+  font-size:24px;
+  margin-bottom:15px;
+  color:#173f5f;
+}
+
+.hero p{
+  max-width:750px;
+  margin:0 auto 25px;
+  color:#506b80;
+  font-size:16px;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 21px;
+  border-radius:30px;
+  font-weight:bold;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn-call{
+  background:#0759a5;
+  color:white;
+}
+
+.btn-whatsapp{
+  background:#16a34a;
+  color:white;
+}
+
+.btn-outline{
+  border:2px solid #0759a5;
+  color:#0759a5;
+  background:white;
+}
+
+section{
+  padding:55px 6%;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:32px;
+}
+
+.section-title h2{
+  font-size:30px;
+  color:#0759a5;
+}
+
+.section-title p{
+  color:#607d94;
+  margin-top:5px;
+}
+
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:15px;
+}
+
+.info-card{
+  background:white;
+  padding:22px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 5px 20px rgba(0,70,120,.08);
+}
+
+.info-icon{
+  font-size:30px;
+  margin-bottom:8px;
+}
+
+.info-card h3{
+  font-size:17px;
+  color:#0759a5;
+  margin-bottom:5px;
+}
+
+.info-card a{
+  color:#173f5f;
+  font-weight:bold;
+}
+
+.about{
+  background:white;
+}
+
+.about-box{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+}
+
+.about-box p{
+  color:#506b80;
+  margin-bottom:12px;
+}
+
+.services{
+  background:#f4f8fc;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
+
+.service-card{
+  background:white;
+  padding:25px 20px;
+  border-radius:18px;
+  box-shadow:0 5px 18px rgba(0,60,100,.08);
+  border-top:4px solid #0787d1;
+}
+
+.service-card .icon{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.service-card h3{
+  color:#0759a5;
+  margin-bottom:7px;
+}
+
+.service-card p{
+  color:#61798c;
+  font-size:14px;
+}
+
+.brands{
+  background:white;
+}
+
+.brand-grid{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
 }
 
 .brand{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:800;
-font-size:22px;
-color:#092e67
+  background:#eef7ff;
+  border:1px solid #d2eaff;
+  color:#0759a5;
+  padding:13px 22px;
+  border-radius:30px;
+  font-weight:bold;
 }
 
-.brand-mark{
-font-size:38px;
-color:#0969cf
+.why{
+  background:linear-gradient(135deg,#0759a5,#0787d1);
+  color:white;
 }
 
-.top-info{
-display:flex;
-align-items:center
+.why .section-title h2,
+.why .section-title p{
+  color:white;
 }
 
-.info{
-padding:0 20px;
-border-right:1px solid #d6dfeb;
-font-size:13px
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:18px;
 }
 
-.info b{
-display:block;
-color:#092e67
+.why-card{
+  background:rgba(255,255,255,.12);
+  padding:24px;
+  border-radius:17px;
+  border:1px solid rgba(255,255,255,.2);
 }
 
-.info span{
-color:#245b99
+.why-card h3{
+  margin-bottom:7px;
 }
 
-.nav{
-background:#06366d;
-color:#fff
+.contact{
+  background:white;
 }
 
-.nav-in{
-height:48px;
-display:flex;
-align-items:center;
-justify-content:center;
-gap:4px
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
 }
 
-.nav a{
-padding:14px 20px;
-font-size:14px;
-font-weight:600
+.contact-card{
+  padding:25px;
+  border-radius:18px;
+  background:#f4f9fd;
+  text-align:center;
 }
 
+.contact-card .big{
+  font-size:38px;
+}
+
+.contact-card h3{
+  color:#0759a5;
+  margin:7px 0;
+}
+
+.contact-card a{
+  color:#0759a5;
+  font-weight:bold;
+  word-break:break-word;
+}
+
+.cta{
+  padding:55px 6%;
+  text-align:center;
+  background:linear-gradient(135deg,#062f63,#0759a5);
+  color:white;
+}
+
+.cta h2{
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.cta p{
+  margin-bottom:22px;
+  color:#dceeff;
+}
+
+.cta .btn-outline{
+  background:white;
+  border:none;
+}
+
+footer{
+  background:#061d33;
+  color:#b8ccdc;
+  text-align:center;
+  padding:25px 6%;
+  font-size:13px;
+}
+
+footer strong{
+  color:white;
+}
+
+.float-buttons{
+  position:fixed;
+  right:15px;
+  bottom:18px;
+  z-index:1000;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.float-btn{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:23px;
+  box-shadow:0 4px 15px rgba(0,0,0,.25);
+}
+
+.float-call{
+  background:#0759a5;
+}
+
+.float-wa{
+  background:#16a34a;
+}
+
+@media(max-width:600px){
+
+  .header-top{
+    padding:13px 4%;
+  }
+
+  .logo{
+    font-size:18px;
+  }
+
+  .call-top{
+    font-size:12px;
+    padding:8px 11px;
+  }
+
+  nav a{
+    margin:0 6px;
+    font-size:13px;
+  }
+
+  .hero{
+    padding:48px 5% 45px;
+  }
+
+  .hero h1{
+    font-size:36px;
+  }
+
+  .hero h2{
+    font-size:21px;
+  }
+
+  section{
+    padding:45px 5%;
+  }
+
+  .section-title h2{
+    font-size:26px;
+  }
+
+  .btn{
+    width:100%;
+    max-width:310px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo">❄️ Dharmveer Rana <span>AC SERVICE</span></div>
+    <a class="call-top" href="tel:8959133616">☎ Call Us</a>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#brands">Brands</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="badge">❄ PROFESSIONAL AC SERVICE EXPERT</div>
+
+  <h1>Dharmveer Rana<br><span>AC SERVICE</span></h1>
+
+  <h2>Cool Comfort <i>• Happy Home</i></h2>
+
+  <p>
+    Professional AC Repair, Service, Installation, Gas Filling &
+    Maintenance at your Home.
+    <br>
+    भरोसेमंद AC Home Service के लिए संपर्क करें।
+  </p>
+
+  <div class="buttons">
+    <a class="btn btn-call" href="tel:8959133616">
+      ☎ Call Now 8959133616
+    </a>
+
+    <a class="btn btn-whatsapp"
+       target="_blank"
+       href="https://wa.me/918959133616?text=Hello%20Dharmveer%20Rana%20AC%20Service%2C%20mujhe%20AC%20Home%20Service%20chahiye.">
+      ◉ WhatsApp Chat Now
+    </a>
+
+    <a class="btn btn-outline" href="#services">
+      View Services →
+    </a>
+  </div>
+</section>
+
+<!-- QUICK INFO -->
+<section>
+  <div class="container">
+    <div class="info-grid">
+
+      <div class="info-card">
+        <div class="info-icon">☎️</div>
+        <h3>Call Us</h3>
+        <a href="tel:8959133616">8959133616</a>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">●</div>
+        <h3>WhatsApp</h3>
+        <a target="_blank"
+        href="https://wa.me/918959133616?text=Hello%20Dharmveer%20Rana%20AC%20Service">
+        Chat Now
+        </a>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">✉️</div>
+        <h3>Email Us</h3>
+        <a href="mailto:dharmveerrana1993@gmail.com">
+          Email Now
+        </a>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">⌖</div>
+        <h3>Our Location</h3>
+        <a target="_blank"
+        href="https://www.google.com/maps/search/?api=1&query=Gwalior%2C%20Madhya%20Pradesh">
+        Gwalior, MP
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>About Dharmveer Rana AC Service</h2>
+      <p>Professional AC Home Service in Gwalior</p>
+    </div>
+
+    <div class="about-box">
+      <p>
+        Dharmveer Rana AC Service provides professional AC repair
+        and home service solutions in Gwalior, Madhya Pradesh.
+      </p>
+
+      <p>
+        AC Service, Repair, Installation, Gas Filling और Maintenance
+        के लिए घर बैठे संपर्क करें।
+      </p>
+
+      <p>
+        हमारा उद्देश्य है कि आपको बेहतर cooling और भरोसेमंद
+        AC service मिले।
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Our AC Services</h2>
+      <p>Complete AC Solutions at Your Home</p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="icon">❄️</div>
+        <h3>AC Service</h3>
+        <p>
+          Split और Window AC की professional cleaning और servicing.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🔧</div>
+        <h3>AC Repair</h3>
+        <p>
+          AC cooling problem, leakage और अन्य repair services.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">⚡</div>
+        <h3>AC Installation</h3>
+        <p>
+          New AC installation और proper fitting की सुविधा.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🧊</div>
+        <h3>Gas Filling</h3>
+        <p>
+          AC gas checking और आवश्यक होने पर gas charging service.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🛠️</div>
+        <h3>AC Maintenance</h3>
+        <p>
+          AC की performance और cooling बनाए रखने के लिए maintenance.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🏠</div>
+        <h3>Home Service</h3>
+        <p>
+          Gwalior में convenient AC home service के लिए संपर्क करें.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands" id="brands">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>AC Brands We Service</h2>
+      <p>Popular AC brands के लिए service support</p>
+    </div>
+
+    <div class="brand-grid">
+      <div class="brand">LG</div>
+      <div class="brand">Samsung</div>
+      <div class="brand">Voltas</div>
+      <div class="brand">Daikin</div>
+      <div class="brand">Carrier</div>
+      <div class="brand">Blue Star</div>
+      <div class="brand">Panasonic</div>
+      <div class="brand">Hitachi</div>
+      <div class="brand">Whirlpool</div>
+      <div class="brand">O General</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Why Choose Us?</h2>
+      <p>भरोसेमंद AC Home Service के लिए</p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <h3>✓ Professional Service</h3>
+        <p>
+          AC service और repair के लिए professional approach.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <h3>✓ Home Service</h3>
+        <p>
+          आपके घर पर convenient AC service की सुविधा.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <h3>✓ Multiple Services</h3>
+        <p>
+          Repair, Service, Installation, Gas Filling और Maintenance.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <h3>✓ Easy Contact</h3>
+        <p>
+          Call और WhatsApp के माध्यम से आसानी से संपर्क करें.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>AC Service के लिए अभी संपर्क करें</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <div class="big">☎️</div>
+        <h3>Call Us</h3>
+        <a href="tel:8959133616">8959133616</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="big">💬</div>
+        <h3>WhatsApp</h3>
+        <a target="_blank"
+        href="https://wa.me/918959133616?text=Hello%20Dharmveer%20Rana%20AC%20Service%2C%20mujhe%20AC%20Home%20Service%20chahiye.">
+        Chat on WhatsApp
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <div class="big">✉️</div>
+        <h3>Email</h3>
+        <a href="mailto:dharmveerrana1993@gmail.com">
+        dharmveerrana1993@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <div class="big">📍</div>
+        <h3>Location</h3>
+        <a target="_blank"
+        href="https://www.google.com/maps/search/?api=1&query=Gwalior%2C%20Madhya%20Pradesh">
+        Gwalior, Madhya Pradesh
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Need AC Service?</h2>
+
+  <p>
+    घर बैठे AC Service, Repair, Installation या Gas Filling के लिए
+    अभी संपर्क करें।
+  </p>
+
+  <div class="buttons">
+
+    <a class="btn btn-whatsapp"
+    target="_blank"
+    href="https://wa.me/918959133616?text=Hello%20Dharmveer%20Rana%20AC%20Service%2C%20mujhe%20AC%20Home%20Service%20chahiye.">
+    ◉ WhatsApp Chat Now
+    </a>
+
+    <a class="btn btn-outline" href="tel:8959133616">
+    ☎ Call Now
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2026 <strong>Dharmveer Rana AC Service</strong> — Gwalior, MP
+  </p>
+  <p>
+    Professional AC Repair & Home Service
+  </p>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-buttons">
+
+  <a class="float-btn float-wa"
+  target="_blank"
+  href="https://wa.me/918959133616?text=Hello%20Dharmveer%20Rana%20AC%20Service%2C%20mujhe%20AC%20Home%20Service%20chahiye."
+  aria-label="WhatsApp">
+  ◉
+  </a>
+
+  <a class="float-btn float-call"
+  href="tel:8959133616"
+  aria-label="Call">
+  ☎
+  </a>
+
+</div>
+
+</body>
+          </html>
 .nav a:hover,
 .nav a.active{
 background:#0878df
