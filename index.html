@@ -6,35 +6,581 @@
 
 <title>Dharmveer Rana AC Service | Gwalior</title>
 
-<meta name="description" content="Dharmveer Rana AC Service Gwalior - Professional AC Repair, AC Service, Installation, Gas Filling and Maintenance at your Home. Call 8959133616.">
-<meta name="keywords" content="AC service Gwalior, AC repair Gwalior, AC gas filling Gwalior, AC installation Gwalior, AC maintenance Gwalior, Dharmveer Rana AC Service">
+<meta name="description" content="Dharmveer Rana AC Service Gwalior - AC Repair, Cleaning, Installation, Gas Filling, Maintenance and Home Service. Call 8959133616.">
+
+<meta name="keywords" content="AC service Gwalior, AC repair Gwalior, AC cleaning Gwalior, AC gas filling Gwalior, AC installation Gwalior, Dharmveer Rana AC Service">
+
 <meta name="author" content="Dharmveer Rana AC Service">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#075ca8">
 
 <style>
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box
+}
+
+html{
+scroll-behavior:smooth
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#f4f8fc;
-  color:#102a43;
-  line-height:1.6;
+font-family:Arial,Helvetica,sans-serif;
+color:#102846;
+background:#f4f9fd;
+line-height:1.5
 }
 
 a{
-  text-decoration:none;
+text-decoration:none;
+color:inherit
 }
 
-header{
-  position:sticky;
-  top:0;
-  z-index:999;
-  background:linear-gradient(135deg,#0759a5,#0787d1);
-  color:white;
+.container{
+width:min(1180px,94%);
+margin:auto
+}
+
+/* HEADER */
+.top{
+background:#fff;
+border-bottom:1px solid #dce7f0;
+padding:10px 0
+}
+
+.topbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:8px;
+color:#073d7c;
+font-weight:900;
+font-size:24px;
+line-height:1
+}
+
+.logo .snow{
+font-size:48px;
+color:#0875d1
+}
+
+.logo small{
+display:block;
+color:#e51e35;
+font-size:13px;
+margin-top:4px;
+letter-spacing:1px
+}
+
+.contactbar{
+display:flex;
+gap:20px;
+align-items:center
+}
+
+.contact{
+display:flex;
+gap:8px;
+align-items:center;
+padding-right:18px;
+border-right:1px solid #d5dde5;
+font-size:21px;
+color:#075ca8
+}
+
+.contact:last-child{
+border:0
+}
+
+.contact b{
+display:block;
+font-size:12px;
+color:#183c62
+}
+
+.contact span{
+display:block;
+font-size:11px;
+color:#42566b
+}
+
+/* NAVIGATION */
+nav{
+background:#064b8e;
+color:#fff
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center
+}
+
+.menu{
+display:flex;
+list-style:none;
+overflow-x:auto
+}
+
+.menu a{
+display:block;
+padding:13px 18px;
+font-size:14px;
+font-weight:700;
+white-space:nowrap
+}
+
+.menu a:hover{
+background:#0875d1
+}
+
+.book{
+background:#ed1d36;
+border-radius:24px;
+padding:10px 22px;
+font-weight:800;
+white-space:nowrap
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(
+105deg,
+#eef9ff,
+#d9effc 55%,
+#b8d8ee
+);
+overflow:hidden
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+min-height:470px;
+align-items:center
+}
+
+.hero-text{
+padding:48px 0
+}
+
+.badge{
+display:inline-block;
+background:#d9f2ff;
+color:#075ca8;
+padding:8px 18px;
+border-radius:30px;
+font-size:12px;
+font-weight:900;
+letter-spacing:1.5px
+}
+
+h1{
+font-size:58px;
+line-height:.98;
+color:#071f44;
+margin:18px 0
+}
+
+h1 span{
+color:#0875d1
+}
+
+.tagline{
+font-size:22px;
+font-weight:800;
+font-style:italic;
+color:#173e65
+}
+
+.lead{
+font-size:17px;
+color:#52697d;
+max-width:620px;
+margin:20px 0
+}
+
+.points{
+display:flex;
+flex-wrap:wrap;
+gap:18px;
+margin:16px 0 23px
+}
+
+.point{
+font-size:13px;
+font-weight:800;
+color:#16476f
+}
+
+.ctas{
+display:flex;
+flex-wrap:wrap;
+gap:9px
+}
+
+.btn{
+display:inline-block;
+padding:13px 20px;
+border-radius:8px;
+font-weight:800
+}
+
+.red{
+background:#ed1d36;
+color:#fff
+}
+
+.green{
+background:#15ad52;
+color:#fff
+}
+
+.whitebtn{
+background:#fff;
+color:#075ca8;
+border:2px solid #075ca8
+}
+
+.hero-photo{
+min-height:470px;
+display:flex;
+align-items:end;
+justify-content:center
+}
+
+.person{
+width:82%;
+height:88%;
+border-radius:25px 25px 0 0;
+background:linear-gradient(
+135deg,
+#d8ebfb,
+#fff
+);
+border:8px solid #ffffff99;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#075ca8;
+font-weight:900;
+font-size:24px;
+box-shadow:0 15px 40px #003c781f
+}
+
+/* BRANDS */
+.brands{
+background:#fff;
+border-bottom:1px solid #dce7ef
+}
+
+.brandrow{
+display:grid;
+grid-template-columns:repeat(7,1fr);
+gap:8px;
+text-align:center;
+padding:14px 0;
+font-weight:900;
+font-size:18px;
+color:#174c86
+}
+
+/* SERVICES */
+.services{
+padding:42px 0
+}
+
+.section-head{
+display:flex;
+justify-content:space-between;
+align-items:end;
+margin-bottom:20px
+}
+
+.eyebrow{
+font-size:12px;
+letter-spacing:2px;
+color:#1763a8;
+font-weight:900
+}
+
+h2{
+font-size:30px;
+line-height:1.05;
+color:#082755
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:12px
+}
+
+.card{
+background:#fff;
+border:1px solid #dce8f2;
+border-radius:14px;
+padding:12px;
+box-shadow:0 5px 18px #003c7810
+}
+
+.card-img{
+height:100px;
+border-radius:10px;
+background:linear-gradient(
+135deg,
+#eaf7ff,
+#cfe9fb
+);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:38px
+}
+
+.card h3{
+font-size:15px;
+color:#064d94;
+margin:9px 0 3px
+}
+
+.card p{
+font-size:12px;
+color:#536272;
+min-height:38px
+}
+
+.learn{
+font-size:12px;
+color:#075ca8;
+font-weight:800
+}
+
+/* STATS */
+.stats{
+background:#075493;
+color:#fff
+}
+
+.statrow{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+padding:23px 0
+}
+
+.stat{
+text-align:center;
+border-right:1px solid #ffffff55
+}
+
+.stat:last-child{
+border:0
+}
+
+.stat b{
+display:block;
+font-size:29px
+}
+
+.stat span{
+font-size:13px
+}
+
+/* ABOUT */
+.about{
+background:#fff;
+padding:45px 0
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1.2fr 1fr;
+gap:20px;
+align-items:center
+}
+
+.about-img{
+min-height:310px;
+border-radius:15px;
+background:linear-gradient(
+135deg,
+#d8edff,
+#f7fbff
+);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#075ca8;
+font-weight:900;
+font-size:22px
+}
+
+.about-text p{
+color:#596b7c;
+font-size:14px;
+margin:14px 0
+}
+
+.checks{
+list-style:none;
+color:#29495e;
+font-size:13px
+}
+
+.checks li{
+margin:7px 0
+}
+
+.checks li:before{
+content:"✓";
+color:#10a954;
+font-weight:900;
+margin-right:8px
+}
+
+/* CTA */
+.cta{
+background:linear-gradient(
+90deg,
+#073f79,
+#0b6bb7
+);
+color:#fff;
+padding:28px 0
+}
+
+.cta-row{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px
+}
+
+.cta h2{
+color:#fff
+}
+
+.cta p{
+font-size:14px
+}
+
+/* FOOTER */
+.footer{
+background:#fff;
+padding:25px 0 12px
+}
+
+.footrow{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px
+}
+
+.social{
+display:flex;
+gap:10px;
+color:#075ca8;
+font-weight:800
+}
+
+.copy{
+text-align:center;
+border-top:1px solid #e0e7ee;
+margin-top:20px;
+padding-top:12px;
+font-size:12px;
+color:#6a7885
+}
+
+/* FLOATING BUTTONS */
+.float{
+position:fixed;
+right:18px;
+bottom:18px;
+z-index:20;
+display:flex;
+flex-direction:column;
+gap:10px
+}
+
+.float a{
+width:52px;
+height:52px;
+border-radius:50%;
+display:grid;
+place-items:center;
+color:#fff;
+font-size:22px;
+box-shadow:0 5px 16px #0003
+}
+
+.float .wa{
+background:#15ad52
+}
+
+.float .call{
+background:#075ca8
+}
+
+/* RESPONSIVE */
+@media(max-width:950px){
+
+.contactbar{
+display:none
+}
+
+.hero-grid{
+grid-template-columns:1fr
+}
+
+.hero-photo{
+min-height:300px
+}
+
+.person{
+height:270px
+}
+
+h1{
+font-size:50px
+}
+
+.cards{
+grid-template-columns:repeat(3,1fr)
+}
+
+.brandrow{
+grid-template-columns:repeat(4,1fr)
+}
+
+.about-grid{
+grid-template-columns:1fr 1fr
+}
+
+.about-grid .about-img:last-child{
+display:none
+}
+
+}
+
+@media(max-width:600px){
+
+.logo{
+font-size:18px
+}
+
+.logo .snow{
+font-size:  color:white;
   box-shadow:0 3px 15px rgba(0,0,0,.15);
 }
 
