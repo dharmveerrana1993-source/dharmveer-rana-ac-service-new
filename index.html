@@ -1,374 +1,396 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dharmveer Rana AC Service | Gwalior</title>
-<meta name="description" content="Dharmveer Rana AC Service Gwalior - AC Repair, Cleaning, Installation, Gas Filling, AMC & Maintenance. Call or WhatsApp for home service.">
+/* BOOKING SECTION */
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<style>
-:root{
-  --blue:#063c78;
-  --blue2:#0b63b6;
-  --red:#ed1c24;
-  --green:#16a34a;
-  --light:#eef8ff;
-  --text:#102a43;
-  --muted:#60758a;
-  --white:#fff;
-  --shadow:0 12px 30px rgba(5,55,105,.12);
-  --radius:18px
+.booking{
+background:linear-gradient(120deg,#073f7b,#0a62ad);
+color:#fff;
 }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0
+.booking-grid{
+display:grid;
+grid-template-columns:.9fr 1.2fr .9fr;
+gap:25px;
+align-items:center;
 }
 
-html{
-  scroll-behavior:smooth
+.booking h2{
+font-size:34px;
+line-height:1.15;
 }
 
-body{
-  font-family:Poppins,Arial,sans-serif;
-  color:var(--text);
-  background:#f7fbff;
-  line-height:1.55
+.booking .left p{
+opacity:.9;
+margin:15px 0 25px;
 }
 
-a{
-  text-decoration:none;
-  color:inherit
+.mini-features{
+display:flex;
+gap:22px;
 }
 
-.container{
-  width:min(1180px,92%);
-  margin:auto
+.mini-features div{
+text-align:center;
+font-size:11px;
 }
 
-.topbar{
-  background:var(--blue);
-  color:#fff;
-  font-size:13px
+.mini-features i{
+display:block;
+font-size:24px;
+margin-bottom:5px;
 }
 
-.topbar .container{
-  min-height:38px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:15px
+.form-card,
+.why{
+background:#fff;
+color:var(--text);
+border-radius:18px;
+padding:20px;
+box-shadow:0 12px 28px rgba(0,0,0,.15);
 }
 
-.top-items{
-  display:flex;
-  gap:25px;
-  flex-wrap:wrap
+.form-card h3{
+text-align:center;
+color:var(--blue);
+margin-bottom:14px;
 }
 
-.navbar{
-  background:#fff;
-  position:sticky;
-  top:0;
-  z-index:50;
-  box-shadow:0 3px 18px rgba(0,0,0,.08)
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
 }
 
-.nav-inner{
-  height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px
+input,
+select,
+textarea{
+width:100%;
+padding:13px 12px;
+border:1px solid #d5e0e9;
+border-radius:9px;
+font:inherit;
+font-size:13px;
+outline:none;
 }
 
-.logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  min-width:245px
+input:focus,
+select:focus,
+textarea:focus{
+border-color:var(--blue2);
+box-shadow:0 0 0 3px rgba(11,99,182,.1);
 }
 
-.logo .snow{
-  font-size:48px;
-  color:var(--blue2);
-  line-height:1
+textarea{
+min-height:80px;
+resize:vertical;
+grid-column:1/-1;
 }
 
-.logo strong{
-  display:block;
-  font-size:25px;
-  line-height:1;
-  color:var(--blue)
+.form-card button{
+width:100%;
+border:0;
+cursor:pointer;
+background:var(--red);
+color:#fff;
+padding:14px;
+border-radius:9px;
+font-weight:700;
+font:inherit;
+margin-top:10px;
 }
 
-.logo b{
-  display:inline-block;
-  background:var(--red);
-  color:#fff;
-  padding:2px 12px;
-  margin-top:5px;
-  font-size:17px;
-  transform:skew(-10deg)
+.form-card button:hover{
+background:#c91018;
 }
 
-.logo small{
-  display:block;
-  font-size:10px;
-  color:#183b62;
-  text-align:center
+.why h3{
+color:var(--blue);
+margin-bottom:12px;
 }
+
+.why ul{
+list-style:none;
+}
+
+.why li{
+margin:10px 0;
+font-size:13px;
+}
+
+.why i{
+color:#19a943;
+margin-right:7px;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:12px;
+}
+
+.gallery-item{
+height:180px;
+border-radius:14px;
+overflow:hidden;
+background:linear-gradient(145deg,#dff2ff,#fff);
+display:grid;
+place-items:center;
+border:1px solid #d8e8f4;
+}
+
+.gallery-item i{
+font-size:55px;
+color:var(--blue2);
+}
+
+.gallery-item span{
+font-weight:700;
+font-size:13px;
+color:var(--blue);
+margin-top:-45px;
+}
+
+/* REVIEWS */
+
+.review-wrap{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:25px;
+align-items:stretch;
+}
+
+.review{
+background:#fff;
+padding:25px;
+border-radius:18px;
+box-shadow:var(--shadow);
+border:1px solid #e1edf5;
+}
+
+.stars{
+color:#f5a400;
+letter-spacing:2px;
+}
+
+.quote{
+font-size:44px;
+color:#c8d7e5;
+line-height:.7;
+}
+
+.review p{
+font-size:14px;
+margin:10px 0 15px;
+}
+
+.reviewer{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.avatar{
+width:45px;
+height:45px;
+border-radius:50%;
+background:#dcefff;
+display:grid;
+place-items:center;
+color:var(--blue);
+font-weight:800;
+}
+
+/* CONTACT */
+
+.contact-card{
+background:var(--blue);
+color:#fff;
+padding:28px;
+border-radius:18px;
+}
+
+.contact-card h3{
+font-size:24px;
+margin-bottom:15px;
+}
+
+.contact-card div{
+margin:14px 0;
+}
+
+.contact-card i{
+width:28px;
+}
+
+.contact-card .call{
+display:inline-flex;
+}
+
+/* FOOTER */
+
+footer{
+background:#062f5c;
+color:#fff;
+padding:30px 0 18px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.3fr 1fr 1fr;
+gap:30px;
+}
+
+.footer-logo{
+font-size:25px;
+font-weight:800;
+}
+
+.footer-logo span{
+color:#ff3940;
+}
+
+footer p,
+footer a{
+font-size:13px;
+color:#d7e7f7;
+margin:5px 0;
+}
+
+.copyright{
+border-top:1px solid rgba(255,255,255,.18);
+margin-top:22px;
+padding-top:15px;
+display:flex;
+justify-content:space-between;
+font-size:12px;
+color:#c5d9ec;
+}
+
+/* FLOATING WHATSAPP */
+
+.float-wa{
+position:fixed;
+right:18px;
+bottom:18px;
+width:58px;
+height:58px;
+border-radius:50%;
+background:#25d366;
+color:#fff;
+display:grid;
+place-items:center;
+font-size:29px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+z-index:80;
+}
+
+.float-wa:hover{
+transform:scale(1.08);
+}
+
+/* MOBILE */
+
+@media(max-width:950px){
 
 .navlinks{
-  display:flex;
-  align-items:center;
-  gap:25px;
-  font-weight:600;
-  font-size:14px
-}
-
-.navlinks a:hover{
-  color:var(--red)
+display:none;
 }
 
 .menu{
-  display:none;
-  font-size:25px;
-  background:none;
-  border:0;
-  color:var(--blue)
+display:block;
 }
 
-.book{
-  background:var(--red);
-  color:#fff;
-  padding:14px 22px;
-  border-radius:14px;
-  font-weight:700;
-  box-shadow:0 8px 18px rgba(237,28,36,.25)
+.logo{
+min-width:auto;
 }
 
-.hero{
-  background:linear-gradient(120deg,#eaf6ff,#fff);
-  padding:45px 0 35px
-}
-
-.hero-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  gap:35px
-}
-
-.eyebrow{
-  font-weight:700;
-  color:var(--blue);
-  letter-spacing:1px
-}
-
-.hero h1{
-  font-size:clamp(42px,5vw,68px);
-  line-height:1.02;
-  color:var(--blue);
-  margin:8px 0
-}
-
-.hero h1 span{
-  display:inline-block;
-  background:var(--red);
-  color:#fff;
-  padding:3px 18px;
-  transform:skew(-8deg);
-  font-size:.7em
-}
-
-.tagline{
-  font-size:21px;
-  font-weight:600;
-  margin:12px 0 24px
-}
-
-.trust{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
-  margin:25px 0
-}
-
-.trust div{
-  text-align:center;
-  font-size:12px;
-  font-weight:600
-}
-
-.trust i{
-  display:block;
-  font-size:27px;
-  color:var(--blue2);
-  margin-bottom:5px
-}
-
-.cta{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  gap:9px;
-  padding:15px 23px;
-  border-radius:14px;
-  color:#fff;
-  font-weight:700
-}
-
-.call{
-  background:var(--red)
-}
-
-.wa{
-  background:var(--green)
-}
-
-.hero-card{
-  background:#fff;
-  border-radius:24px;
-  box-shadow:var(--shadow);
-  overflow:hidden;
-  position:relative
+.hero-grid,
+.booking-grid,
+.review-wrap{
+grid-template-columns:1fr;
 }
 
 .hero-card img{
-  width:100%;
-  height:510px;
-  object-fit:cover;
-  object-position:center top;
-  display:block
-}
-
-.hero-badge{
-  position:absolute;
-  left:20px;
-  bottom:20px;
-  background:rgba(6,60,120,.94);
-  color:#fff;
-  border-radius:14px;
-  padding:12px 18px;
-  font-weight:700
-}
-
-.brands{
-  background:#fff;
-  padding:18px 0;
-  border-bottom:1px solid #e2edf6
-}
-
-.brand-links{
-  display:grid;
-  grid-template-columns:repeat(7,1fr);
-  gap:14px;
-  align-items:center
-}
-
-.brand-link{
-  height:76px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:9px 12px;
-  background:#fff;
-  border:1px solid #e2edf6;
-  border-radius:10px;
-  transition:.25s
-}
-
-.brand-link:hover{
-  transform:translateY(-3px);
-  box-shadow:0 8px 20px rgba(5,55,105,.12)
-}
-
-.brand-link img{
-  max-width:100%;
-  max-height:55px;
-  width:auto;
-  height:auto;
-  object-fit:contain
-}
-
-.section{
-  padding:55px 0
-}
-
-.section-head{
-  text-align:center;
-  margin-bottom:28px
-}
-
-.section-head h2{
-  font-size:32px;
-  color:var(--blue)
-}
-
-.section-head p{
-  color:var(--muted)
-}
-
-.redline{
-  width:65px;
-  height:4px;
-  background:var(--red);
-  margin:9px auto;
-  border-radius:10px
-}
-
-.services{
-  background:var(--light)
+height:430px;
 }
 
 .service-grid{
-  display:grid;
-  grid-template-columns:repeat(6,1fr);
-  gap:14px
+grid-template-columns:repeat(3,1fr);
 }
 
-.service{
-  background:#fff;
-  border:1px solid #dceaf5;
-  border-radius:15px;
-  padding:18px 12px;
-  text-align:center;
-  box-shadow:0 5px 15px rgba(10,65,110,.07);
-  transition:.25s
+.brand-links{
+grid-template-columns:repeat(4,1fr);
 }
 
-.service:hover{
-  transform:translateY(-6px);
-  box-shadow:var(--shadow)
+.gallery-grid{
+grid-template-columns:repeat(3,1fr);
 }
 
-.service .icon{
-  height:75px;
-  display:grid;
-  place-items:center;
-  font-size:42px;
-  color:var(--blue2)
 }
 
-.service h3{
-  font-size:15px;
-  margin:7px 0;
-  color:var(--blue)
+@media(max-width:600px){
+
+.topbar .container{
+padding:7px 0;
 }
 
-.service p{
-  font-size:12px;
-  color:var(--muted)
+.top-items{
+gap:8px;
+font-size:10px;
+}
+
+.top-items span:nth-child(2){
+display:none;
+}
+
+.nav-inner{
+height:68px;
+}
+
+.logo .snow{
+font-size:38px;
+}
+
+.logo strong{
+font-size:19px;
+}
+
+.logo b{
+font-size:13px;
+}
+
+.logo small{
+font-size:8px;
+}
+
+.hero{
+padding-top:25px;
+}
+
+.hero h1{
+font-size:43px;
+}
+
+.trust{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero-card img{
+height:330px;
+}
+
+.brand-links{
+grid-template-columns:repeat(2,1fr);
+}
+
+.brand-link{
+height:68px;
+}
+
+.brand-link img{
+max-height:45px;
+}
+
+.service-grid{
+grid-template-columns:repeat(2,1fr);
 }
