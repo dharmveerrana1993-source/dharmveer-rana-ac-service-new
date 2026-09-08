@@ -1,1258 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Dharmveer Rana AC Service | Gwalior</title>
+<meta name="description" content="Dharmveer Rana AC Service Gwalior - AC Repair, Cleaning, Installation, Gas Filling, AMC & Maintenance. Call or WhatsApp for home service.">
 
-<meta name="description" content="Dharmveer Rana AC Service - Professional AC repair, cleaning, installation, gas filling and maintenance in Gwalior, MP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-
 :root{
---blue:#063b78;
---blue2:#0057ad;
---light:#f3f8fc;
---red:#ee2034;
---green:#09b66b;
---ink:#10233e;
+  --blue:#063c78;
+  --blue2:#0b63b6;
+  --red:#ed1c24;
+  --green:#16a34a;
+  --light:#eef8ff;
+  --text:#102a43;
+  --muted:#60758a;
+  --white:#fff;
+  --shadow:0 12px 30px rgba(5,55,105,.12);
+  --radius:18px
 }
 
 *{
-box-sizing:border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:0
+}
+
+html{
+  scroll-behavior:smooth
 }
 
 body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-color:var(--ink);
-background:white;
+  font-family:Poppins,Arial,sans-serif;
+  color:var(--text);
+  background:#f7fbff;
+  line-height:1.55
 }
 
 a{
-text-decoration:none;
-color:inherit;
+  text-decoration:none;
+  color:inherit
 }
 
 .container{
-width:min(100% - 34px,960px);
-margin:auto;
+  width:min(1180px,92%);
+  margin:auto
 }
 
-/* TOP HEADER */
-
-.top{
-background:#f7fbff;
-border-bottom:1px solid #d7e2ec;
+.topbar{
+  background:var(--blue);
+  color:#fff;
+  font-size:13px
 }
 
-.topin{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:20px;
-padding:12px 0;
+.topbar .container{
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px
+}
+
+.top-items{
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap
+}
+
+.navbar{
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:50;
+  box-shadow:0 3px 18px rgba(0,0,0,.08)
+}
+
+.nav-inner{
+  height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:10px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width:245px
 }
 
-.snow{
-font-size:44px;
-color:#0753a0;
-line-height:1;
+.logo .snow{
+  font-size:48px;
+  color:var(--blue2);
+  line-height:1
 }
 
-.brand{
-font-weight:800;
-font-size:23px;
-color:#07366e;
+.logo strong{
+  display:block;
+  font-size:25px;
+  line-height:1;
+  color:var(--blue)
 }
 
-.brand b{
-display:block;
-background:#e51e32;
-color:#fff;
-padding:2px 8px;
-font-size:17px;
-width:max-content;
+.logo b{
+  display:inline-block;
+  background:var(--red);
+  color:#fff;
+  padding:2px 12px;
+  margin-top:5px;
+  font-size:17px;
+  transform:skew(-10deg)
 }
 
-.tag{
-font-size:10px;
-color:#e51e32;
-font-weight:700;
+.logo small{
+  display:block;
+  font-size:10px;
+  color:#183b62;
+  text-align:center
 }
 
-.info{
-display:flex;
-gap:25px;
-align-items:center;
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:25px;
+  font-weight:600;
+  font-size:14px
 }
 
-.info div{
-font-size:12px;
-border-left:1px solid #d4dce5;
-padding-left:18px;
+.navlinks a:hover{
+  color:var(--red)
 }
 
-.info strong{
-display:block;
-color:#0c315e;
-font-size:12px;
-}
-
-.info span{
-color:#27384b;
-}
-
-/* NAVIGATION */
-
-.nav{
-background:#003e7c;
-color:white;
-}
-
-.navin{
-display:flex;
-align-items:center;
-justify-content:space-between;
-}
-
-.links{
-display:flex;
-}
-
-.links a{
-padding:12px 18px;
-font-size:12px;
-}
-
-.links a:first-child{
-background:#0874d1;
+.menu{
+  display:none;
+  font-size:25px;
+  background:none;
+  border:0;
+  color:var(--blue)
 }
 
 .book{
-background:var(--red);
-padding:10px 22px;
-border-radius:20px;
-font-weight:700;
-font-size:12px;
+  background:var(--red);
+  color:#fff;
+  padding:14px 22px;
+  border-radius:14px;
+  font-weight:700;
+  box-shadow:0 8px 18px rgba(237,28,36,.25)
 }
-
-/* HERO */
 
 .hero{
-background:linear-gradient(100deg,#eef7ff,#d9eaf8);
-overflow:hidden;
+  background:linear-gradient(120deg,#eaf6ff,#fff);
+  padding:45px 0 35px
 }
 
-.heroin{
-min-height:435px;
-display:grid;
-grid-template-columns:1.05fr .95fr;
-align-items:stretch;
-}
-
-.heroText{
-padding:45px 0 25px;
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:35px
 }
 
 .eyebrow{
-font-size:12px;
-letter-spacing:2px;
-font-weight:700;
+  font-weight:700;
+  color:var(--blue);
+  letter-spacing:1px
 }
 
-h1{
-font-size:54px;
-line-height:.98;
-margin:12px 0;
-color:#06295c;
+.hero h1{
+  font-size:clamp(42px,5vw,68px);
+  line-height:1.02;
+  color:var(--blue);
+  margin:8px 0
 }
 
-h1 span{
-color:#0758b1;
+.hero h1 span{
+  display:inline-block;
+  background:var(--red);
+  color:#fff;
+  padding:3px 18px;
+  transform:skew(-8deg);
+  font-size:.7em
 }
 
-.slogan{
-font-size:20px;
-font-weight:700;
-font-style:italic;
-color:#06295c;
-}
-
-.redline{
-height:4px;
-width:125px;
-background:var(--red);
-transform:skewX(-25deg);
-margin:8px 0 20px;
+.tagline{
+  font-size:21px;
+  font-weight:600;
+  margin:12px 0 24px
 }
 
 .trust{
-display:flex;
-gap:14px;
-margin:14px 0 20px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin:25px 0
 }
 
 .trust div{
-font-size:11px;
-font-weight:700;
-border-right:1px solid #b8c7d8;
-padding-right:14px;
+  text-align:center;
+  font-size:12px;
+  font-weight:600
 }
 
-.trust b{
-font-size:25px;
-display:block;
-color:#0861b6;
+.trust i{
+  display:block;
+  font-size:27px;
+  color:var(--blue2);
+  margin-bottom:5px
 }
 
-.heroText h3{
-margin:8px 0 4px;
-font-size:15px;
-}
-
-.heroText p{
-font-size:13px;
-line-height:1.5;
-margin:0 0 16px;
-max-width:510px;
-}
-
-.buttons{
-display:flex;
-gap:8px;
-flex-wrap:wrap;
+.cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap
 }
 
 .btn{
-padding:13px 18px;
-border-radius:8px;
-color:#fff;
-font-weight:700;
-font-size:12px;
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:15px 23px;
+  border-radius:14px;
+  color:#fff;
+  font-weight:700
 }
 
-.red{
-background:var(--red);
+.call{
+  background:var(--red)
 }
 
-.green{
-background:var(--green);
+.wa{
+  background:var(--green)
 }
 
-.white{
-background:white;
-color:#0753a0;
-border:1px solid #0a66ba;
+.hero-card{
+  background:#fff;
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  position:relative
 }
 
-.heroPic{
-display:flex;
-align-items:flex-end;
-justify-content:flex-end;
+.hero-card img{
+  width:100%;
+  height:510px;
+  object-fit:cover;
+  object-position:center top;
+  display:block
 }
 
-.heroPic img{
-width:100%;
-height:100%;
-object-fit:cover;
-object-position:center top;
+.hero-badge{
+  position:absolute;
+  left:20px;
+  bottom:20px;
+  background:rgba(6,60,120,.94);
+  color:#fff;
+  border-radius:14px;
+  padding:12px 18px;
+  font-weight:700
 }
-
-/* BRANDS */
 
 .brands{
-background:#fff;
-border-bottom:1px solid #d8e0e8;
+  background:#fff;
+  padding:18px 0;
+  border-bottom:1px solid #e2edf6
 }
 
-.brandrow{
-display:flex;
-justify-content:space-around;
-align-items:center;
-padding:14px 0;
-font-weight:900;
-font-style:italic;
-font-size:19px;
-color:#174a87;
+.brand-links{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:14px;
+  align-items:center
 }
 
-.brandrow span:nth-child(3){
-color:#164eaa;
+.brand-link{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:9px 12px;
+  background:#fff;
+  border:1px solid #e2edf6;
+  border-radius:10px;
+  transition:.25s
 }
 
-.brandrow span:nth-child(4){
-color:#e42d36;
+.brand-link:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(5,55,105,.12)
 }
 
-/* SERVICES */
+.brand-link img{
+  max-width:100%;
+  max-height:55px;
+  width:auto;
+  height:auto;
+  object-fit:contain
+}
 
 .section{
-padding:26px 0;
-background:#f4f8fc;
+  padding:55px 0
 }
 
-.sectionHead{
-display:flex;
-justify-content:space-between;
-align-items:end;
+.section-head{
+  text-align:center;
+  margin-bottom:28px
 }
 
-.kicker{
-font-size:11px;
-letter-spacing:2px;
-font-weight:700;
+.section-head h2{
+  font-size:32px;
+  color:var(--blue)
 }
 
-h2{
-font-size:24px;
-line-height:1.05;
-margin:5px 0 16px;
-color:#092f63;
+.section-head p{
+  color:var(--muted)
 }
 
-.services{
-display:grid;
-grid-template-columns:repeat(6,1fr);
-gap:9px;
-}
-
-.card{
-background:#fff;
-border-radius:12px;
-padding:9px;
-box-shadow:0 1px 5px #dbe4ed;
-}
-
-.card img{
-width:100%;
-height:72px;
-object-fit:cover;
-border-radius:7px;
-}
-
-.card h3{
-font-size:13px;
-color:#064b91;
-margin:8px 0 4px;
-}
-
-.card p{
-font-size:11px;
-line-height:1.25;
-color:#444;
-min-height:29px;
-margin:0;
-}
-
-.more{
-font-size:11px;
-color:#075bab;
-font-weight:700;
-margin-top:8px;
-display:block;
-}
-
-/* STATS */
-
-.stats{
-background:#064780;
-color:#fff;
-}
-
-.statrow{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-padding:15px 0;
-}
-
-.stat{
-text-align:center;
-border-right:1px solid #6d95b9;
-}
-
-.stat:last-child{
-border:0;
-}
-
-.stat b{
-display:block;
-font-size:24px;
-}
-
-.stat span{
-font-size:11px;
-}
-
-/* ABOUT */
-
-.about{
-background:#fff;
-padding:14px 0 28px;
-}
-
-.aboutgrid{
-display:grid;
-grid-template-columns:1fr 1fr 1fr;
-gap:28px;
-align-items:center;
-}
-
-.about img{
-width:100%;
-height:310px;
-object-fit:cover;
-border-radius:10px;
-}
-
-.aboutText p{
-font-size:12px;
-line-height:1.55;
-color:#4a5560;
-}
-
-.checks{
-padding:0;
-margin:12px 0;
-list-style:none;
-}
-
-.checks li{
-font-size:12px;
-margin:7px 0;
-}
-
-.checks li:before{
-content:'✓';
-color:#16aa63;
-font-weight:bold;
-margin-right:8px;
-}
-
-.know{
-display:inline-block;
-background:#0b73d1;
-color:#fff;
-padding:11px 20px;
-border-radius:18px;
-font-size:11px;
-font-weight:700;
-}
-
-.ad img{
-height:310px;
-}
-
-/* CTA */
-
-.cta{
-position:relative;
-overflow:hidden;
-}
-
-.cta img{
-width:100%;
-height:115px;
-object-fit:cover;
-filter:brightness(.75);
-}
-
-.ctain{
-position:absolute;
-inset:0;
-display:flex;
-align-items:center;
-justify-content:space-between;
-color:#fff;
-}
-
-.ctain h2{
-color:#fff;
-margin:0;
-font-size:24px;
-}
-
-.ctain p{
-margin:5px 0 0;
-font-weight:700;
-font-size:13px;
-}
-
-/* FOOTER */
-
-footer{
-background:#fff;
-}
-
-.footin{
-padding:18px 0;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.social{
-display:flex;
-gap:12px;
-font-size:20px;
-}
-
-.copy{
-border-top:1px solid #ddd;
-padding:13px 0;
-font-size:10px;
-display:flex;
-justify-content:space-between;
-}
-
-/* TABLET */
-
-@media(max-width:850px){
-
-.info{
-display:none;
+.redline{
+  width:65px;
+  height:4px;
+  background:var(--red);
+  margin:9px auto;
+  border-radius:10px
 }
 
 .services{
-grid-template-columns:repeat(3,1fr);
+  background:var(--light)
 }
 
-.aboutgrid{
-grid-template-columns:1fr 1fr;
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:14px
 }
 
-.ad{
-display:none;
+.service{
+  background:#fff;
+  border:1px solid #dceaf5;
+  border-radius:15px;
+  padding:18px 12px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(10,65,110,.07);
+  transition:.25s
 }
 
+.service:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow)
 }
 
-/* MOBILE */
-
-@media(max-width:650px){
-
-.links a:nth-child(n+4){
-display:none;
+.service .icon{
+  height:75px;
+  display:grid;
+  place-items:center;
+  font-size:42px;
+  color:var(--blue2)
 }
 
-.book{
-padding:8px 12px;
+.service h3{
+  font-size:15px;
+  margin:7px 0;
+  color:var(--blue)
 }
 
-.heroin{
-grid-template-columns:1fr;
+.service p{
+  font-size:12px;
+  color:var(--muted)
 }
-
-.heroPic{
-height:280px;
-}
-
-h1{
-font-size:42px;
-}
-
-.services{
-grid-template-columns:repeat(2,1fr);
-}
-
-.aboutgrid{
-grid-template-columns:1fr;
-}
-
-.statrow{
-grid-template-columns:repeat(2,1fr);
-gap:12px;
-}
-
-.stat{
-border:0;
-}
-
-.ctain{
-padding:0 15px;
-display:block;
-padding-top:18px;
-}
-
-.ctain h2{
-font-size:18px;
-}
-
-.ctain .buttons{
-margin-top:10px;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-
-<!-- HEADER -->
-
-<header class="top">
-
-<div class="container topin">
-
-<div class="logo">
-
-<div class="snow">❄</div>
-
-<div class="brand">
-
-Dharmveer Rana
-
-<b>AC SERVICE</b>
-
-<small class="tag">
-Cool Comfort&nbsp;&nbsp; Happy Home
-</small>
-
-</div>
-
-</div>
-
-
-<div class="info">
-
-<div>
-<strong>☎ Call Us</strong>
-<span>8959133616</span>
-</div>
-
-<div>
-<strong>◉ WhatsApp</strong>
-<span>Chat Now</span>
-</div>
-
-<div>
-<strong>✉ Email Us</strong>
-<span>dharmveer rana1993@gmail.com</span>
-</div>
-
-<div>
-<strong>📍 Our Location</strong>
-<span>Gwalior, MP</span>
-</div>
-
-</div>
-
-</div>
-
-</header>
-
-
-<!-- NAVIGATION -->
-
-<nav class="nav">
-
-<div class="container navin">
-
-<div class="links">
-
-<a href="#home">Home</a>
-
-<a href="#about">About</a>
-
-<a href="#services">Services</a>
-
-<a href="#brands">Brands</a>
-
-<a href="#why">Why Us</a>
-
-<a href="#testimonials">Testimonials</a>
-
-<a href="#gallery">Gallery</a>
-
-<a href="#contact">Contact</a>
-
-</div>
-
-<a class="book" href="tel:8959133616">
-Book Home Service →
-</a>
-
-</div>
-
-</nav>
-
-
-<!-- HERO -->
-
-<section class="hero" id="home">
-
-<div class="container heroin">
-
-<div class="heroText">
-
-<div class="eyebrow">
-PROFESSIONAL AC SERVICE EXPERT
-</div>
-
-<h1>
-Dharmveer Rana
-<br>
-<span>AC SERVICE</span>
-</h1>
-
-<div class="slogan">
-Cool Comfort&nbsp;&nbsp; Happy Home
-</div>
-
-<div class="redline"></div>
-
-
-<div class="trust">
-
-<div>
-<b>⌂</b>
-Home
-<br>
-Service
-</div>
-
-<div>
-<b>✓</b>
-Trusted
-<br>
-Service
-</div>
-
-<div>
-<b>⚙</b>
-Expert
-<br>
-Technician
-</div>
-
-<div>
-<b>◷</b>
-Fast
-<br>
-Response
-</div>
-
-</div>
-
-
-<h3>
-Your Comfort Our Priority
-</h3>
-
-<p>
-Professional AC Repair, Service, Installation,
-Gas Filling & Maintenance at your Home.
-We keep your world cool.
-</p>
-
-
-<div class="buttons">
-
-<a class="btn red" href="tel:8959133616">
-☎ &nbsp;Call Now
-<br>
-8959133616
-</a>
-
-<a class="btn green"
-href="https://wa.me/918959133616">
-◉ &nbsp;WhatsApp
-<br>
-Chat Now
-</a>
-
-<a class="btn white"
-href="mailto:dharmveer rana1993@gmail.com">
-✉ &nbsp;Email Us
-<br>
-dharmveer rana1993@gmail.com
-</a>
-
-</div>
-
-</div>
-
-
-<div class="heroPic">
-
-<!-- अपनी HERO IMAGE यहां लगाएं -->
-
-<img src="hero.jpg"
-alt="Dharmveer Rana AC Service">
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- BRANDS -->
-
-<section class="brands" id="brands">
-
-<div class="container brandrow">
-
-<span>DAIKIN</span>
-<span>LG</span>
-<span>VOLTAS</span>
-<span>HITACHI</span>
-<span>SAMSUNG</span>
-<span>Panasonic</span>
-<span>BLUE STAR</span>
-
-</div>
-
-</section>
-
-
-<!-- SERVICES -->
-
-<section class="section" id="services">
-
-<div class="container">
-
-<div class="sectionHead">
-
-<div>
-
-<div class="kicker">
-OUR SERVICES
-</div>
-
-<h2>
-Complete AC Solutions
-<br>
-Under One Roof
-</h2>
-
-</div>
-
-<a class="more" href="#">
-View All Services →
-</a>
-
-</div>
-
-
-<div class="services">
-
-
-<div class="card">
-
-<img src="ac-repair.jpg"
-alt="AC Repair">
-
-<h3>
-AC Repair
-</h3>
-
-<p>
-All types of AC faults fixed by experts
-</p>
-
-<a class="more" href="#">
-Learn More →
-</a>
-
-</div>
-
-
-<div class="card">
-
-<img src="ac-cleaning.jpg"
-alt="AC Cleaning">
-
-<h3>
-AC Cleaning
-</h3>
-
-<p>
-Deep cleaning for better cooling
-</p>
-
-<a class="more" href="#">
-Learn More →
-</a>
-
-</div>
-
-
-<div class="card">
-
-<img src="ac-installation.jpg"
-alt="AC Installation">
-
-<h3>
-AC Installation
-</h3>
-
-<p>
-Professional & safe installation
-</p>
-
-<a class="more" href="#">
-Learn More →
-</a>
-
-</div>
-
-
-<div class="card">
-
-<img src="gas-filling.jpg"
-alt="AC Gas Filling">
-
-<h3>
-AC Gas Filling
-</h3>
-
-<p>
-Original gas charging service
-</p>
-
-<a class="more" href="#">
-Learn More →
-</a>
-
-</div>
-
-
-<div class="card">
-
-<img src="ac-maintenance.jpg"
-alt="AC Maintenance">
-
-<h3>
-AC Maintenance
-</h3>
-
-<p>
-Keep your AC in top condition
-</p>
-
-<a class="more" href="#">
-Learn More →
-</a>
-
-</div>
-
-
-<div class="card">
-
-<img src="home-service.jpg"
-alt="Home Service">
-
-<h3>
-Home Service
-</h3>
-
-<p>
-Service at your doorstep
-</p>
-
-<a class="more" href="#">
-Learn More →
-</a>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- STATS -->
-
-<section class="stats">
-
-<div class="container statrow">
-
-<div class="stat">
-
-<b>👥 1000+</b>
-
-<span>
-Happy Customers
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<b>⚙ 5+</b>
-
-<span>
-Years Experience
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<b>♢ 100%</b>
-
-<span>
-Quality Service
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<b>📍 Gwalior</b>
-
-<span>
-Our Service Area
-</span>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section class="about" id="about">
-
-<div class="container aboutgrid">
-
-
-<div>
-
-<img src="about.jpg"
-alt="Dharmveer Rana">
-
-</div>
-
-
-<div class="aboutText">
-
-<div class="kicker">
-ABOUT US
-</div>
-
-<h2>
-Dharmveer Rana
-<br>
-AC Service
-</h2>
-
-<p>
-
-We are committed to providing reliable,
-professional and affordable AC services in Gwalior.
-
-Our goal is simple —
-Your Comfort, Our Priority.
-
-With years of experience and customer trust,
-we ensure the best service for your home and office.
-
-</p>
-
-
-<ul class="checks">
-
-<li>
-Trained & Experienced Technician
-</li>
-
-<li>
-Genuine Parts & Tools
-</li>
-
-<li>
-Affordable Pricing
-</li>
-
-<li>
-On-Time Service
-</li>
-
-<li>
-Customer Satisfaction Guaranteed
-</li>
-
-</ul>
-
-
-<a class="know" href="#">
-Know More →
-</a>
-
-</div>
-
-
-<div class="ad">
-
-<img src="comfort.jpg"
-alt="Good Air Better Life">
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta">
-
-<img src="cta.jpg"
-alt="Book AC Service">
-
-<div class="container ctain">
-
-<div>
-
-<h2>
-Book Your AC Home Service Today!
-</h2>
-
-<p>
-Fast | Reliable | Professional
-</p>
-
-</div>
-
-
-<div class="buttons">
-
-<a class="btn red"
-href="tel:8959133616">
-
-☎ Call Now
-<br>
-8959133616
-
-</a>
-
-
-<a class="btn green"
-href="https://wa.me/918959133616">
-
-◉ WhatsApp
-<br>
-Chat Now
-
-</a>
-
-
-<a class="btn white"
-href="mailto:dharmveer rana1993@gmail.com">
-
-✉ Email Us
-<br>
-dharmveer rana1993@gmail.com
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer id="contact">
-
-<div class="container footin">
-
-
-<div class="logo">
-
-<div class="snow">
-❄
-</div>
-
-<div class="brand">
-
-Dharmveer Rana
-
-<b>
-AC SERVICE
-</b>
-
-<small class="tag">
-Cool Comfort&nbsp;&nbsp; Happy Home
-</small>
-
-</div>
-
-</div>
-
-
-<div class="links">
-
-<a href="#home">Home</a>
-
-<a href="#about">About</a>
-
-<a href="#services">Services</a>
-
-<a href="#brands">Brands</a>
-
-<a href="#contact">Contact</a>
-
-</div>
-
-
-<div class="social">
-
-<a href="#">
-🔵
-</a>
-
-<a href="#">
-📷
-</a>
-
-<a href="#">
-▶️
-</a>
-
-</div>
-
-</div>
-
-
-<div class="container copy">
-
-<span>
-© 2026 Dharmveer Rana AC Service.
-All Rights Reserved.
-</span>
-
-<span>
-<i>Cool Comfort&nbsp;&nbsp; Happy Home</i>
-</span>
-
-</div>
-
-</footer>
-
-
-</body>
-  </html>
